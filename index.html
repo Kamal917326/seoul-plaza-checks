@@ -175,7 +175,7 @@ table.simple{border-collapse:collapse;width:100%;font-size:13px}
 <div class="app">
   <header class="top">
     <div class="brand"><small>Seoul Plaza</small><h1 id="pageTitle">Today</h1></div>
-    <button class="chip-btn" data-act="staff" aria-label="Switch staff member"><span class="avatar" id="meInit">H</span><span id="meName">Harsh</span></button>
+    <button class="chip-btn" data-act="staff" aria-label="Switch staff member"><span class="avatar" id="meInit">H</span><span id="meName">kamal </span></button>
   </header>
   <div class="demo"><span>Prototype with example data. Nothing here is real shop records.</span><button data-act="reset">Reset demo</button></div>
   <main id="view"></main>
@@ -249,7 +249,7 @@ function curSlot(now=new Date()){let c=-1;SLOTS.forEach((s,i)=>{if(slotTime(i,no
 
 function seed(){
  const now=new Date(),today=dstr(now);
- const staff=['Harsh','Ji-woo','Mei','Tom'];
+ const staff=['kamal ','Ji-woo','Mei','Tom'];
  const hotItems=[
   {id:'pork',name:'Spicy pork',tray:18},{id:'beef',name:'Beef bulgogi',tray:24},
   {id:'tofu',name:'Braised tofu',tray:8},{id:'corndog',name:'Corn dogs',tray:12},
@@ -274,16 +274,16 @@ function seed(){
  const deliveries=[
   mkDel(0,'northfield','08:40',[{sku:'5012345000035',t:6.8}],'Tom'),
   mkDel(1,'hanriver','10:15',[{sku:'8801073110489',short:4}],'Mei'),
-  mkDel(2,'goldenbean','09:05',[],'Harsh'),
+  mkDel(2,'goldenbean','09:05',[],'kamal '),
   mkDel(4,'goldendragon','11:30',[],'Ji-woo'),
   mkDel(5,'goldenbean','09:20',[{sku:'5060111220018',warm:9.4}],'Tom'),
   mkDel(7,'northfield','08:35',[],'Mei'),
   mkDel(8,'sakura','13:10',[{sku:'4901330571234',short:6}],'Ji-woo'),
-  mkDel(9,'hanriver','10:40',[],'Harsh'),
+  mkDel(9,'hanriver','10:40',[],'kamal '),
   mkDel(12,'goldenbean','09:10',[{sku:'5060111220032',warm:10.1}],'Mei'),
   mkDel(14,'northfield','08:50',[{sku:'5012345000035',short:1}],'Tom'),
   mkDel(16,'goldendragon','12:00',[],'Ji-woo'),
-  mkDel(19,'goldenbean','09:00',[],'Harsh')];
+  mkDel(19,'goldenbean','09:00',[],'kamal ')];
  const B=(name,qty,dateType,d,aisle,cost,status='active')=>({id:uid(),name,qty,dateType,date:addDays(d),aisle,cost,status,checked:null});
  const batches=[
   B('Firm tofu 400g',6,'useby',-1,'Chiller 2',0.9),
@@ -303,9 +303,9 @@ function seed(){
   B('Instant ramen 5-pack',14,'bbd',200,'Aisle A2',4.2)];
  const W=(d,name,qty,val,reason,st)=>({id:uid(),date:addDays(-d),name,qty,value:val,reason,staff:st});
  const waste=[W(1,'Bean sprouts 500g',4,0.7,'Past use-by','Mei'),W(2,'Original fried chicken (tray)',1,15,'Hot hold below 63°C','Tom'),
-  W(3,'Corn dogs (tray)',1,12,'End of day','Harsh'),W(4,'Kimchi 1kg',1,4.5,'Damaged','Ji-woo'),W(6,'Firm tofu 400g',6,0.9,'Past use-by','Tom'),
-  W(9,'Tteokbokki rice cakes 500g',3,1.8,'Past use-by','Mei'),W(12,'Chocolate biscuit sticks',5,0.9,'Past best before','Harsh')];
- return {day:today,staff,me:'Harsh',hotItems,hot,deliveries,batches,waste};
+  W(3,'Corn dogs (tray)',1,12,'End of day','kamal '),W(4,'Kimchi 1kg',1,4.5,'Damaged','Ji-woo'),W(6,'Firm tofu 400g',6,0.9,'Past use-by','Tom'),
+  W(9,'Tteokbokki rice cakes 500g',3,1.8,'Past use-by','Mei'),W(12,'Chocolate biscuit sticks',5,0.9,'Past best before','kamal ')];
+ return {day:today,staff,me:'kamal ',hotItems,hot,deliveries,batches,waste};
 }
 
 /* ---------- derived ---------- */
