@@ -2,7 +2,7 @@
 
 A paperless food safety app prototype for a Korean, Chinese and Japanese grocery with a hot food counter. It replaces the paper sheets staff fill in by hand for hot food temperatures, delivery checks and date checks, and keeps every record time-stamped and named.
 
-**Live demo:** [(https://kamal917326.github.io/seoul-plaza-checks/)]
+**Live demo:** [Open Seoul Plaza Checks](https://kamal917326.github.io/seoul-plaza-checks/)
 
 > This is a prototype with example data. Suppliers, barcodes, staff names and prices are made up. Records are saved only in the browser on the device you use.
 
